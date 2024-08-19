@@ -1,0 +1,141 @@
+body {
+    background-color: #2c3e50;
+    line-height: 1.4em;
+    padding: 0;
+    margin: 0;
+    transition: background-color 0.3s ease;
+}
+
+#left {
+    background-color: #34495e;
+    line-height: 1em;
+    transition: background-color 0.3s ease;
+}
+
+#left * {
+    color: #ecf0f1;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#left h3, #left h4 {
+    color: #3498db;
+    margin-top: 5px;
+    transition: color 0.3s ease;
+}
+
+#left .btn {
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+#left .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+#left .btn.btn-default {
+    color: #2c3e50;
+}
+
+#panel {
+    padding: 5%;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#page {
+    width: 21cm;
+    background-color: #ecf0f1;
+    margin: 1% auto 1% auto;
+    padding: 0.2cm 1.3cm 1cm 1.3cm;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.3);
+    line-height: 1.4em;
+    text-align: left;
+    transition: all 0.3s ease;
+}
+
+#page:hover {
+    box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5);
+}
+
+a {
+    color: #3498db;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #2980b9;
+}
+
+.section-title h4 { 
+    margin-top: 15px;
+    margin-bottom: 0px;
+    color: #2c3e50;
+    transition: color 0.3s ease;
+}
+
+.section-title.shaded h4 {
+    padding: 3px;
+    padding-left: 10px;
+    font-size: 14px;
+    background-color: #bdc3c7 !important;
+    transition: background-color 0.3s ease;
+}
+
+.section-title.ruled.rule-above hr.hr-above {
+    border: 1px solid #7f8c8d;
+    margin-top: 0px; 
+    margin-bottom: 0px;
+}
+
+.text {
+    color: #34495e;
+    font-size: 13.5px;
+}
+
+.time {
+    color: #7f8c8d;
+    font-style: italic;
+    margin-right: 1px;
+}
+
+.title {
+    color: #2c3e50;
+    transition: color 0.3s ease;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.section {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.btn, .toggle-option {
+    transition: all 0.3s ease;
+}
+
+.btn:hover, .toggle-option:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+#contentName {
+    transition: all 0.3s ease;
+}
+
+#contentName:hover {
+    transform: scale(1.05);
+}
+
+.table {
+    transition: all 0.3s ease;
+}
+
+.table:hover {
+    background-color: #f5f5f5;
+}

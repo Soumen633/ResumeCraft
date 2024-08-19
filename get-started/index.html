@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>ResumeCraft.in/get-started</title>
+    <meta name="description" content="">
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="icon" href="/image/image.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="/get-started/css/production.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo"><img src="/image/image.png" alt=""></div>
+                <div class="user-greeting">Hi <span id="userName"></span>...</div>
+                <ul class="nav-links">
+                    <li><a href="/ff.html">Home</a></li>
+                    <li><a href="/ff.html#about">About</a></li>
+                    <li><a href="http://localhost:3000">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="resume-cards">
+                <div class="resume-card" data-aos="fade-up" data-aos-duration="1000">
+                    <h3>Basic Resume</h3>
+                    <img src="./img/resume-3.jpg" alt="Basic Resume Template">
+                    <p>A clean and simple resume template for a professional look.</p>
+                    <a href="3/index.html" class="btn-animated">Try This Template</a>
+                </div>
+                <div class="resume-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                    <h3>Standard Resume</h3>
+                    <img src="./img/resume-1.jpeg" alt="Standard Resume Template">
+                    <p>A classic resume template suitable for various industries.</p>
+                    <a href="1/index.html" class="btn-animated">Try This Template</a>
+                </div>
+                <div class="resume-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                    <h3>Modern Resume</h3>
+                    <img src="./img/resume-2.jpeg" alt="Modern Resume Template">
+                    <p>A contemporary resume design for a fresh, updated look.</p>
+                    <a href="2/index.html" class="btn-animated">Try This Template</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="align--center">
+        <div class="container">
+            <p>Developed & Designed by ResumeCraft</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+
+
+
+
+        document.addEventListener('DOMContentLoaded', function () {
+            // Retrieve the currentUser data from local storage
+            var currentUser = JSON.parse(localStorage.getItem('currentUser'));
+
+            // Check if currentUser exists and has a name property
+            if (currentUser && currentUser.name) {
+                document.getElementById('userName').textContent = currentUser.name;
+            } else {
+                document.getElementById('userName').textContent = 'Guest';
+            }
+        });
+
+
+    </script>
+
+</body>
+
+</html>
